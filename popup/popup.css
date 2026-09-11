@@ -1,0 +1,98 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #202124;
+  background: #f7f8fa;
+}
+
+body {
+  margin: 0;
+  width: 330px;
+}
+
+main {
+  padding: 18px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.sub {
+  margin: 4px 0 16px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  margin: 11px 0 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="time"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.check-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.check-row label {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 9px 10px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.primary {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #fff;
+}
+
+button.danger {
+  margin-top: 8px;
+  width: 100%;
+  color: #b91c1c;
+}
+
+#status {
+  min-height: 18px;
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+
+.note {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 11px;
+  line-height: 1.45;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uma Auto Sign TW</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main>
+    <h1>Uma Auto Sign TW</h1>
+    <p class="sub">每日簽到輔助</p>
+
+    <label>
+      帳號 / Email
+      <input id="account" type="text" autocomplete="username" />
+    </label>
+
+    <label>
+      密碼
+      <input id="password" type="password" autocomplete="current-password" />
+    </label>
+
+    <label>
+      簽到時間
+      <input id="signTime" type="time" step="60" />
+    </label>
+
+    <div class="check-row">
+      <input id="autoAgree" type="checkbox" />
+      <label for="autoAgree">登入時自動勾選「我已閱讀並同意」</label>
+    </div>
+
+    <div class="check-row">
+      <input id="closeTabOnSuccess" type="checkbox" />
+      <label for="closeTabOnSuccess">簽到成功後自動關閉分頁</label>
+    </div>
+
+    <div class="check-row">
+      <input id="debugEnabled" type="checkbox" />
+      <label for="debugEnabled">顯示除錯狀態</label>
+    </div>
+
+    <div class="actions">
+      <button id="save" class="primary">儲存設定</button>
+      <button id="test">立即測試</button>
+    </div>
+
+    <button id="clear" class="danger ghost">清除帳密</button>
+    <p id="status"></p>
+    <p class="note">圖形驗證碼仍需手動輸入。密碼保存在此 Chrome 設定檔的本機擴充功能儲存空間。</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
